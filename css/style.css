@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: arial, sans-serif;
+    font-size: 10px;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    /*
+    max-width: 1920px;
+    margin: 0 auto;
+*/
+    background-image: url(../img/bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header > * {
+    position: absolute;
+}
+
+header img {
+    top: 35px;
+    left: 60px;
+}
+
+header h1 {
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, .55);
+    font-size: 6rem;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header button.find-more {
+    bottom: 50px;
+    right: 50px;
+    font-size: 4rem;
+    padding: 20px 60px;
+    font-family: 'Roboto Condensed', arial, sans-serif;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: white;
+    border: 5px solid white;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+header button.find-more:hover {
+    background-color: rgba(0, 0, 0, .7);
+}
+
+@media (max-width: 1024px) {
+    header {
+        background-size: cover;
+    }
+}
+
+@media (max-width: 823px) and (orientation:landscape) {
+    header img.logo {
+        width: 25%;
+        top: 20px;
+        left: 30px;
+    }
+
+    header h1 {
+        font-size: 2.7rem;
+    }
+
+    header button.find-more {
+        font-size: 2rem;
+        padding: 15px 40px;
+    }
+}
+
+@media (max-width: 568px) and (orientation:landscape) {
+    header button.find-more {
+        font-size: 1.7rem;
+        right: 30px;
+        bottom: 30px;
+    }
+}
+
+
+@media (max-width: 533px) and (orientation:landscape) {
+    header img.logo {
+        width: 30%;
+        top: 20px;
+        left: 20px;
+    }
+
+    header h1 {
+        font-size: 2.3rem;
+    }
+
+    header button.find-more {
+        padding: 12px 30px;
+    }
+}
+
+@media (max-width: 414px) and (orientation: portrait) {
+    header img.logo {
+        width: 80%;
+        left: 10%;
+    }
+
+    header h1 {
+        font-size: 4rem;
+        line-height: 1.8;
+        top: 48%;
+    }
+
+    header button.find-more {
+        font-size: 2.6rem;
+        width: 80%;
+        padding: 15px 0;
+        right: 10%;
+        bottom: 10%;
+    }
+}
+
+@media (max-width: 320px) and (orientation: portrait) {
+    header h1 {
+        font-size: 3.2rem;
+        line-height: 1.5;
+        top: 48%;
+    }
+
+    header button.find-more {
+        font-size: 1.9rem;
+        width: 80%;
+        padding: 15px 0;
+        right: 10%;
+        bottom: 10%;
+    }
+}
+
+section {
+    width: 85%;
+    margin: 80px auto 80px;
+    font-size: 1.9rem;
+    text-align: justify;
+}
+
+section p {
+    line-height: 1.7;
+}
